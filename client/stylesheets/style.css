@@ -72,9 +72,14 @@ body {
         padding-bottom: 10px;
 }
 
-.projects-container-row img {
-       
+.projects-container-row img{
+       height: 250px;
 }
+
+.item {
+        height: 200px;
+}
+
 
 .projects-container-row {
         padding-left: 50px;
@@ -116,9 +121,19 @@ body {
 
 .connect-jumbo-container {
         text-align: center;
-        font-size: 30px;
+        font-size: 40px;
         font-weight:30px;
 }
+
+.hometitle {
+        text-align: center;
+}
+
+.callout {
+        text-align: center;
+}
+
+
 
 footer {
         margin: 50px 0;
