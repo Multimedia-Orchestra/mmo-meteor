@@ -139,6 +139,10 @@ footer {
         margin: 50px 0;
 }
 
+#mission{
+    margin-top: 50px;
+}
+
 /* RESPONSIVE CSS */
 
 @media (max-width: 1200px) {
