@@ -143,6 +143,42 @@ footer {
     margin-top: 50px;
 }
 
+.intro-text {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.intro-text-container {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.statement {
+    width:  700px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.statement-container {
+
+}
+
+.friend-img-container img {
+    width:300px;
+    float: left;
+}
+
+.friend-img-container {
+    margin: 0 auto;
+    width:900px;
+    padding-top: 20px;
+}
+
+.top-line {
+
+}
+
+
 /* RESPONSIVE CSS */
 
 @media (max-width: 1200px) {
