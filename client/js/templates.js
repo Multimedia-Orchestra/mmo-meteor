@@ -75,7 +75,22 @@ Template.projectsTemplate.projects = function() {
 
 
         ];
-};
+}
+
+Template.gravityTemplate.images1 = function() {
+    return ["gravity1.png", "gravity2.png", "gravity3.png"];
+}
+Template.gravityTemplate.images2 = function() {
+    return ["gravity4.png", "gravity5.png", "gravity6.png"];
+}
+Template.gravityTemplate.images3 = function() {
+    return ["gravity7.png", "gravity8.png", "gravity9.png", "gravity.gif"];
+}
+
+Template.vectorfieldTemplate.images = function() {
+    return ["vectorfield1.png", "vectorfield2.png", "vectorfield3.png", "vectorfield4.png", "vectorfield5.png", "vectorfield6.png", "vectorfield7.png"];
+}
+
 
 // Group the projects array into fours, for easy processing into rows
 Template.projectsTemplate.projectsInFours = function() {

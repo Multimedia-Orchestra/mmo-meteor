@@ -1,32 +1,68 @@
+<template name="_gravityImageSet">
+    <div class="ui medium images">
+        {{#each this}}
+        <a href="/images/installations/gravity/{{this}}" class="ui medium image">
+            <img src="/images/installations/gravity/{{this}}">
+        </a>
+        {{/each}}
+    </div>
+</template>
+
+
+
 <template name="gravityTemplate">
 
-    {{> navbarTemplate}}
+{{> navbarTemplate}}
+
+
+<div class="container">
 
     <div class="headline feature">
 
-        <h1>Gravity</h1><h2> - A million point particles float in space and are pulled towards your fingers.</h2>
+        <h1>Gravity</h1>
+        <h2>A million point particles float in space and are pulled towards your fingers.</h2>
+
+        <hr>
 
         <p>
         I recently got a Leap Motion and wanted to extend an old Processing sketch of mine, FlexiLine (http://www.openprocessing.org/sketch/323) to allow users to control the location of the pull with your fingers.
         I also knew we would have a large screen to display installations on so I wanted something immersive and immediate; a pure interaction that's easy to play with but that creates something beautiful.
         </p>
 
-        <picture of flexiline>
+        {{#with images1}}
+            {{> _gravityImageSet}}
+        {{/with}}
 
         <p>
         I actually based Gravity off of a Processing piece I wrote back in 2008. The original sketch, FlexiLine, was 20,000 purely white dots on a black background. Hardware has grown more powerful since 2008 and I was able to get ~200,000 dots on the screen at 60 fps, which was a big win.
         Unfortunately with so many particles it became hard to see some of the finer details and felt visually cluttered near the attractor point.
         The natural extension was to make particles transparent; then, the sketch showed both the spread of particles and the density, which added another dimension visually.
         After optimization and performance tuning, we could bump up the particle count to 1,000,000 at 60fps. It was great.
+        </p>
+
+        {{#with images2}}
+            {{> _gravityImageSet}}
+        {{/with}}
+
+
+        <p>
         I was a bit nervous about showing the piece because I couldn't get an interaction model that I was really happy with. That was mostly a failing on my end - the sketch didn't provide enough visual feedback as to whether you were attracting or not. Additionally, the Leap Motion wouldn't consistently detect your fingers. That said, it worked well enough that strangers could just walk up to the booth, put their hands over the leap motion, and achieve some level of play with the dust.
         Gravity was kind of a full circle experience because FlexiLine was the first piece of creative code I ever made public, through OpenProcessing. Now, the spiritual successor to that sketch, really just a simple extension to it, is the first piece displayed in an actual venue.
         </p>
+
+        {{#with images3}}
+            {{> _gravityImageSet}}
+        {{/with}}
+
+
 
         <!-- pictures of gravity -->
         <!-- pictures of people interacting with it -->
         <!-- video of gravity? -->
 
         <!-- But there was a new problem with transparent particles &#45; it was too black. Most of the space felt empty, with only a few stray bits of grey. It felt lonely. So, why not bump up the particle count? Because it was slow. Keeping 60 fps is extremely important for sketches like this, where the user expects *immediate* feedback from their interactions. The solution was to performance tune the sketch. -->
-         <!-- I was still in high school back in 2008, just spending 2&#45;3 hours a day after school making whatever inspired me at the time. -->
-     </div>
+        <!-- I was still in high school back in 2008, just spending 2&#45;3 hours a day after school making whatever inspired me at the time. -->
+    </div>
+
+</div>
 </template>

@@ -17,22 +17,25 @@
 <template name="projectsTemplate">
   {{> navbarTemplate}}
 
-  	<div class="projects-header-container">
-		<h1 class="ui inverted black block header header-fixed">
-		  Projects
-		</h1>
-	</div>
 
-	<h1 class="projects-jumbo-container">
-		Check out our creations!
-	</h1>
+        <div class="projects-header-container">
+            <h1 class="ui inverted black block header header-fixed">
+              Projects
+            </h1>
+        </div>
 
-  {{#each projectsInFours}}
-  <div class="ui four small items projects-container-row">
-      {{#each this}}
-          {{> projectItem}}
+  <div class="container">
+        <h1 class="projects-jumbo-container">
+            Check out our creations!
+        </h1>
+
+      {{#each projectsInFours}}
+      <div class="ui four small items projects-container-row">
+          {{#each this}}
+              {{> projectItem}}
+          {{/each}}
+      </div>
       {{/each}}
   </div>
-  {{/each}}
 
 </template>
