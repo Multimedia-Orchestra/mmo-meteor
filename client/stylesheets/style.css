@@ -125,6 +125,11 @@ body {
         font-weight:30px;
 }
 
+.connect-container {
+        /* background: url(/images/room.jpg); */
+        /* background-size: cover; */
+}
+
 .hometitle {
         text-align: center;
 }
