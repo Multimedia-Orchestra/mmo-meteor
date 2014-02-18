@@ -60,9 +60,7 @@ body {
 }
 
 .checkboxes {
-
         margin-bottom: 10px;
-
 }
 
 .projects-container-row {
@@ -73,26 +71,8 @@ body {
 }
 
 .projects-container-row img{
-       height: 250px;
-}
-
-.item .image img {
-    display: block;
-    width: 100%;
-}
-
-.item {
-        height: 200px;
-}
-
-.projects-container-row {
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-bottom: 10px;
-}
-
-.description {
-
+        height: 200px !important;
+        width: 100%;
 }
 
 .projects-header-container {

@@ -1,7 +1,7 @@
 <template name="projectItem">
     <div class="item">
         <div class="image">
-            <a href="{{route}}">
+            <a href="{{route}}" class="ui medium image">
                 <img src="{{iconUrl}}">
             </a>
         </div>
@@ -29,13 +29,11 @@
             Check out our creations!
         </h1>
 
-      {{#each projectsInFours}}
-      <div class="ui four small items projects-container-row">
-          {{#each this}}
+      <div class="ui items projects-container-row">
+          {{#each projects}}
               {{> projectItem}}
           {{/each}}
       </div>
-      {{/each}}
   </div>
 
 </template>

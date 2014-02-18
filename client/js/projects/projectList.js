@@ -37,15 +37,3 @@ Template.projectsTemplate.projects = [
 
     new Project( "Visual Instrument", "visualinstrument.jpg", "Meena Vempathy", "Visual Instrument is a human-controlled visualizer for music; an experiment in adding a human element to music visualization.", ["visualinstrument.jpg"]),
     ];
-
-// Group the projects array into fours, for easy processing into rows
-Template.projectsTemplate.projectsInFours = function() {
-    var projects = Template.projectsTemplate.projects;
-    var projectsGrouped = [];
-    projects.forEach(function(project, idx) {
-        var bucket = Math.floor(idx / 4);
-        var array = (projectsGrouped[bucket] = projectsGrouped[bucket] || []);
-        array.push(project);
-    });
-    return projectsGrouped;
-};
