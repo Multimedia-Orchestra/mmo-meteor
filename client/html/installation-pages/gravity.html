@@ -1,36 +1,11 @@
-<template name="_gravityImageSet">
-    <div class="ui medium images">
-        {{#each this}}
-        <a href="/images/installations/gravity/{{this}}" class="ui medium image">
-            <img src="/images/installations/gravity/{{this}}">
-        </a>
-        {{/each}}
-    </div>
-</template>
-
-
-
-<template name="gravityTemplate">
-
-{{> navbarTemplate}}
-
-
-<div class="container">
-
-    <div class="headline feature">
-
-        <h1>Gravity</h1>
-        <h2>A million point particles float in space and are pulled towards your fingers.</h2>
-
-        <hr>
-
+<template name="gravity">
         <p>
         I recently got a Leap Motion and wanted to extend an old Processing sketch of mine, FlexiLine (http://www.openprocessing.org/sketch/323) to allow users to control the location of the pull with your fingers.
         I also knew we would have a large screen to display installations on so I wanted something immersive and immediate; a pure interaction that's easy to play with but that creates something beautiful.
         </p>
 
         {{#with images1}}
-            {{> _gravityImageSet}}
+            {{> _projectImageSet}}
         {{/with}}
 
         <p>
@@ -41,7 +16,7 @@
         </p>
 
         {{#with images2}}
-            {{> _gravityImageSet}}
+            {{> _projectImageSet}}
         {{/with}}
 
 
@@ -50,19 +25,4 @@
         Gravity was kind of a full circle experience because FlexiLine was the first piece of creative code I ever made public, through OpenProcessing. Now, the spiritual successor to that sketch, really just a simple extension to it, is the first piece displayed in an actual venue.
         </p>
 
-        {{#with images3}}
-            {{> _gravityImageSet}}
-        {{/with}}
-
-
-
-        <!-- pictures of gravity -->
-        <!-- pictures of people interacting with it -->
-        <!-- video of gravity? -->
-
-        <!-- But there was a new problem with transparent particles &#45; it was too black. Most of the space felt empty, with only a few stray bits of grey. It felt lonely. So, why not bump up the particle count? Because it was slow. Keeping 60 fps is extremely important for sketches like this, where the user expects *immediate* feedback from their interactions. The solution was to performance tune the sketch. -->
-        <!-- I was still in high school back in 2008, just spending 2&#45;3 hours a day after school making whatever inspired me at the time. -->
-    </div>
-
-</div>
 </template>

@@ -1,0 +1,35 @@
+<!-- Context is array of strings representing img src urls relative to /images/installations/ -->
+<template name="_projectImageSet">
+    <div class="ui medium images">
+        {{#each this}}
+        <a href="/images/installations/{{this}}" class="ui medium image">
+            <img src="/images/installations/{{this}}">
+        </a>
+        {{/each}}
+    </div>
+</template>
+
+
+<template name="projectPageTemplate">
+
+{{> navbarTemplate }}
+
+<!-- context is project JSON -->
+<div class="container">
+    <div class="headline feature">
+        <h1> {{name}} <span class="text-muted">by {{maker}}</span> </h1>
+        <h2>{{description}}</h2>
+
+        <hr>
+
+        {{{renderProjectInfo}}}
+
+        {{#with images}}
+            {{> _projectImageSet}}
+        {{/with}}
+
+
+    </div>
+</div>
+
+</template>

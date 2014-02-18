@@ -1,39 +1,6 @@
-<template name="_vectorfieldImageSet">
-    <div class="ui medium images">
-        {{#each this}}
-        <a href="/images/installations/vectorfield/{{this}}" class="ui medium image">
-            <img src="/images/installations/vectorfield/{{this}}">
-        </a>
-        {{/each}}
-    </div>
-</template>
-
-
-
-
-<template name="vectorfieldTemplate">
-
-    {{> navbarTemplate}}
-
-<div class="container">
-
-    <div class="headline feature">
-
-        <h1>VectorField</h1>
-        <h2>Control a directional flow field surrounding your body and those around you.</h2>
-
-        <hr>
-
-        <p>
-        I wanted to create something that would make people physically moving to interact with the sketch. I wanted to give people a superpower feeling, like they could manipulate space far away from their physical bodies. This is a constraint that I feel humans are constantly trying to overcome. I also believe in the power of physical movement to connect strangers.
-        </p>
-
-        {{#with images}}
-            {{> _vectorfieldImageSet}}
-        {{/with}}
-
-    </div>
-
-</div>
+<template name="vectorfield">
+<p>
+I wanted to create something that would make people physically moving to interact with the sketch. I wanted to give people a superpower feeling, like they could manipulate space far away from their physical bodies. This is a constraint that I feel humans are constantly trying to overcome. I also believe in the power of physical movement to connect strangers.
+</p>
 </template>
 

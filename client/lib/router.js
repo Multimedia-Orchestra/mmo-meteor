@@ -6,7 +6,7 @@ Router = {
 	uri: _.compact(window.location.pathname.split("/")),
 	routes: [],
 
-	addRoute: function(route, template) {
+	addRoute: function(route, templateOrFn) {
 		var segments =  _.compact(route.split("/"));
 		
 		var placeholders = _.reduce(segments, function(currentArr, piece, index) {
@@ -19,7 +19,7 @@ Router = {
 
 		this.routes.push({
 			segments: segments,
-			template: template,
+			templateOrFn: templateOrFn,
 			placeholderIndexes: placeholders
 		});
 	},
@@ -41,7 +41,7 @@ Router = {
 				if (match) {
 					return {
 						data: data,
-						template: route.template
+						templateOrFn: route.templateOrFn
 					}
 				}
 			}
@@ -53,9 +53,15 @@ Router = {
 		var route = this.getMatchingRoute();
 		if (route) {
 			var fragment = Meteor.render(function() {
-				if (Template[route.template] !== undefined) {
-					return Template[route.template](route.data);
-				}
+                if(_.isString(route.templateOrFn)) { // use a predefined template
+                    var templateName = route.templateOrFn;
+                    if (Template[templateName] !== undefined) {
+                        return Template[templateName](route.data);
+                    }
+                } else {
+                    // it's a function; invoke it
+                    return route.templateOrFn(route.data);
+                }
 			});
 	
 			document.body.appendChild(fragment);
