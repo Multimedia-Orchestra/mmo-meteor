@@ -33,7 +33,7 @@ Template.projectsTemplate.projects = [
 
     new Project( "Laser Harp",  "laserharp1.jpg",  "Eugene Lynch", "Eugene's laser harp is a custom designed laser sensor system. The strings of the laser harp are used to trigger visual and audio samples.", ["laserharp1.jpg", "laserharp2.jpg"]),
 
-    new Project( "N x N",  "gridillusion1.png",  "Derek Razo", "N x N is an installtion involving 3 photo-sensitive, sound generating boxes, which respond to projections designed in processing to create a hermann grid effect.", ["gridillusion1.png"]),
+    new Project( "N x N",  "gridillusion1.png",  "Derek Razo", "N x N is an installation involving 3 photo-sensitive, sound generating boxes, which respond to projections designed in Processing to create a Hermann grid effect.", ["gridillusion1.png"]),
 
     new Project( "Blind Bullets Sleep Talking",  "sculpture1.jpg",  "DeMart Denero", "Bling Bullets Sleep Talking is an interactive, kinectic sound sculpture.", ["sculpture1.jpg", "sculpture2.jpg"]),
 
