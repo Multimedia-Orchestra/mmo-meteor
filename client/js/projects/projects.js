@@ -37,5 +37,5 @@ Template.projectsTemplate.projects = [
 
     new Project( "Blind Bullets Sleep Talking",  "sculpture1.jpg",  "DeMart Denero", "Bling Bullets Sleep Talking is an interactive, kinectic sound sculpture.", ["sculpture1.jpg", "sculpture2.jpg"]),
 
-    new Project( "Visual Instrument", "visualinstrument.jpg", "Meena Vempathy", "Visual Instrument is a human-controlled visualizer for music; an experiment in adding a human element to music visualization.", ["visualinstrument.jpg"]),
+    new Project( "Visual Instrument", "visualinstrument.jpg", "Meena Vempaty", "Visual Instrument is a human-controlled visualizer for music; an experiment in adding a human element to music visualization.", ["visualinstrument.jpg"]),
     ];
