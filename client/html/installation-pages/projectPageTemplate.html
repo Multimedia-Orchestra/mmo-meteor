@@ -1,8 +1,8 @@
 <!-- Context is array of strings representing img src urls relative to /images/installations/ -->
 <template name="_projectImageSet">
-    <div class="ui medium images">
+    <div class="ui large images">
         {{#each this}}
-        <a href="/images/installations/{{this}}" class="ui medium image">
+        <a href="/images/installations/{{this}}" class="ui large image">
             <img src="/images/installations/{{this}}">
         </a>
         {{/each}}
@@ -11,6 +11,7 @@
 
 
 <template name="projectPageTemplate">
+{{ documentTitle name }}
 
 {{> navbarTemplate }}
 
