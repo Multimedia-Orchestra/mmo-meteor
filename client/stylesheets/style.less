@@ -16,48 +16,14 @@ body {
 
 }
 
-.headline {
-        padding: 120px 0;
-}
 
-.headline > .container > h1 {
-        font-size: 85px;
-
-}
-
-.headline > .container > h2 {
-        font-size: 65px;
-}
-
-.feature {
-        background-color:rgba(255, 255, 255, 1);
-
-
-}
 
 .signup {
 
         display: inline-block;
         text-align: center;
 }
-.featurette-divider {
-        margin: 40px 0;
-}
-.featurette {
-        overflow: hidden; 
 
-}
-
-.featurette-image.pull-left {
-        margin-right: 40px;
-}
-.featurette-image.pull-right {
-        margin-left: 40px;
-}
-
-.featurette-heading {
-        font-size: 50px;
-}
 
 .checkboxes {
         margin-bottom: 10px;
@@ -178,9 +144,31 @@ footer {
 }
 
 
-/* RESPONSIVE CSS */
+.headline {
+    padding: 120px 0;
+}
+.feature {
+    background-color:rgba(255, 255, 255, 1);
+}
 
-@media (max-width: 1200px) {
+/* RESPONSIVE */
+@micro: 375px;
+@tiny: 640px;
+@small: 668px;
+@medium: 768px;
+@large: 991px;
+@xlarge: 1200px;
+
+.headline > .container > h1 { font-size: 85px; }
+.headline > .container > h2 { font-size: 65px; }
+
+.featurette-divider { margin: 40px 0; }
+.featurette { overflow: hidden; }
+.featurette-image.pull-left { margin-right: 40px; }
+.featurette-image.pull-right { margin-left: 40px; }
+.featurette-heading { font-size: 50px; }
+
+@media (max-width: @xlarge) {
 
 .headline > .container > h1 {font-size: 140px;}
 .headline > .container > h2 {font-size: 63px;}
@@ -191,7 +179,7 @@ footer {
 
 }
 
-@media (max-width: 991px) {
+@media (max-width: @large) {
 
 .headline > .container > h1 {font-size: 105px;}
 .headline > .container > h2 {font-size: 50px;}
@@ -203,7 +191,7 @@ footer {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: @medium) {
         
 .container {margin: 0 15px;}
 .featurette-divider {margin: 40px 0;}
@@ -212,7 +200,7 @@ footer {
 }
 
 
-@media (max-width: 668px) {
+@media (max-width: @small) {
 
 .headline > .container > h1 {font-size: 70px;}
 .headline > .container > h2 {font-size: 32px;}
@@ -220,7 +208,7 @@ footer {
 
 }
 
-@media (max-width: 640px) {
+@media (max-width: @tiny) {
 
 .headline {padding: 75px 0 25px 0;}
 .headline > .container > h1 {font-size: 60px;}
@@ -228,7 +216,7 @@ footer {
 
 }
 
-@media (max-width: 375px) {
+@media (max-width: @micro) {
 
 .featurette-divider {margin: 10px 0;}
 .featurette-image {max-width: 100%;}
