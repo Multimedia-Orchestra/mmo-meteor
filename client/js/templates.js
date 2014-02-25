@@ -4,3 +4,6 @@ Template.gravity.images1 = function() {
 Template.gravity.images2 = function() {
     return ["gravity/gravity4.png", "gravity/gravity5.png", "gravity/gravity6.png"];
 }
+Template.embeddedSignupTemplate.rendered = function () {
+  $('.ui.checkbox').checkbox();
+}
