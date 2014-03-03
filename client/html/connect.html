@@ -8,54 +8,35 @@
 		</h1>
 	</div>
 
-  <div class="container connect-container">
-
-        <div class="row">
-            <div class="box">
-
-                <div class="col-md-4">
-                    <h2 class="featurette-heading text-center">Makers</h2>
-                    <p>
-                    Come right in! Join us Sundays at 1pm in <a href="http://bid.berkeley.edu/">UC Berkeley's BiD Lab</a>
-                    where we'll have weekly hacking sessions to build, explore, and have fun. We welcome musicians, developers,
-                    hardware hackers, artists of all styles, and anyone who is interested!
-                    </p>
-                    <p>Questions? <a href="mailto: ucbmultimedia@gmail.com">Contact us</a> or
-                    <a href="https://www.facebook.com/multimediaorchestraberkeley">find us on Facebook!</a>
-                    </p>
-                    <p> Wanna hack on our code? <a href="https://github.com/Multimedia-Orchestra">Find us on Github!</a>
-                    </p>
-                </div>
-
-                <div class="col-md-4">
-                    <h2 class="featurette-heading text-center"> Events </h2>
-                    <p>Are you interested in having Multimedia Orchestra perform at your event? <a href="mailto: ucbmultimedia@gmail.com">Contact us</a>
-                    with event details!
-                    </p>
-
-                </div>
-
-                <div class="col-md-4">
-                    <h2 class="featurette-heading text-center"> Sponsors </h2>
-                    <p>Help us create the next generation of art, music, and technology! <a href="mailto: ucbmultimedia@gmail.com">Contact us</a>
-                    with sponsorship details!
-                    </p>
-                </div>
-
-                
-            </div>
+  <div class="ui three column divided stackable connect page grid">
+        <div class="column">
+            <h2 class="featurette-heading">Makers</h2>
+            <p>
+            Come right in! Join us Sundays at 1pm in <a href="http://bid.berkeley.edu/">UC Berkeley's BiD Lab</a>
+            where we'll have weekly hacking sessions to build, explore, and have fun. We welcome musicians, developers,
+            hardware hackers, artists of all styles, and anyone who is interested!
+            </p>
+            <p>Questions? <a href="mailto: ucbmultimedia@gmail.com">Contact us</a> or
+            <a href="https://www.facebook.com/multimediaorchestraberkeley">find us on Facebook!</a>
+            </p>
+            <p> Wanna hack on our code? <a href="https://github.com/Multimedia-Orchestra">Find us on Github!</a>
+            </p>
         </div>
 
-        <div class="row">
-            <div class="box">
-                <div class="col-lg-12">
+        <div class="column">
+            <h2 class="featurette-heading"> Events </h2>
+            <p>Are you interested in having Multimedia Orchestra perform at your event? <a href="mailto: ucbmultimedia@gmail.com">Contact us</a>
+            with event details!
+            </p>
 
-                    {{> embeddedSignupTemplate}}
-
-                </div>
-                
-            </div>
         </div>
 
+        <div class="column">
+            <h2 class="featurette-heading"> Sponsors </h2>
+            <p>Help us create the next generation of art, music, and technology! <a href="mailto: ucbmultimedia@gmail.com">Contact us</a>
+            with sponsorship details!
+            </p>
+        </div>
     </div>
+    {{> embeddedSignupTemplate}}
 </template>

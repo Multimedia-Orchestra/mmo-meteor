@@ -10,3 +10,5 @@ preserve-inputs
 bootstrap-3
 router
 semantic-ui
+less
+jquery
