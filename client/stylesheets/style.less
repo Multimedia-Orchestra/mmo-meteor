@@ -1,22 +1,17 @@
+/* RESPONSIVE variables */
+@micro: 375px;
+@tiny: 640px;
+@small: 668px;
+@medium: 768px;
+@large: 991px;
+@xlarge: 1200px;
+
 body {
-        margin-top: 50px; /* 50px is the height of the navbar - change this if the navbarn height changes */
-        /*background: url(/images/mmo-header-background2.jpg);*/
-        background-position: -200px;
-
-
+    margin-top: 50px; /* 50px is the height of the navbar - change this if the navbarn height changes */
+    /* background: url(/images/mmo-header-background2.jpg); */
+    background-position: -200px;
+    color: #333;
 }
-
-.navbar-text {
-
-}
-
-.header-image {
-
-
-
-}
-
-
 
 .signup.container {
     text-align: center;
@@ -24,7 +19,6 @@ body {
 .signup.form {
     display: inline-block;
 }
-
 
 .two.checkbox.fields {
     margin-bottom: 10px;
@@ -113,36 +107,53 @@ footer {
     width: 400px;
 }
 
-.intro-text-container {
-    margin: 0 auto;
-    width: 400px;
-}
+.about.page {
+    .column {
+        header {
+            margin: 0 auto;
+            width: 400px;
+        }
 
-.statement {
-    width:  700px;
-    margin: 0 auto;
-    padding: 30px;
-}
+        strong {
+            font-weight: 700;
+        }
 
-.statement-container {
+        h2, p {
+            text-align: center;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-weight: 500;
+            line-height: 1.1;
+        }
 
-}
+        p {
+            margin: 0 auto;
+            font-size: 1.475em;
+            line-height: 1.4;
+            max-width: 700px;
+            padding: 30px;
+        }
+    }
+    .friends.column .images {
+        text-align: center;
+        padding-top: 30px;
+        margin: 0 auto;
 
-.friend-img-container img {
-    width:300px;
-    float: left;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.friend-img-container {
-    margin: 0 auto;
-    width:900px;
-    padding-top: 30px;
-}
-
-.top-line {
-
+        img {
+            width: 300px;
+            vertical-align: middle;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        @media (max-width: @large) {
+            img { width: 250px; }
+        }
+        @media (max-width: @medium) {
+            img { width: 225px; }
+        }
+        @media (max-width: @small) {
+            img { width: 200px; }
+        }
+    }
 }
 
 #cnmat {
@@ -161,13 +172,6 @@ footer {
     background-color:rgba(255, 255, 255, 1);
 }
 
-/* RESPONSIVE */
-@micro: 375px;
-@tiny: 640px;
-@small: 668px;
-@medium: 768px;
-@large: 991px;
-@xlarge: 1200px;
 
 .headline > .container > h1 { font-size: 85px; }
 .headline > .container > h2 { font-size: 65px; }
