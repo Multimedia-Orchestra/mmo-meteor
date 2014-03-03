@@ -15,26 +15,25 @@
 
 
 <template name="projectsTemplate">
-    {{ documentTitle "Projects" }}
+  {{ documentTitle "Projects" }}
   {{> navbarTemplate}}
 
+  <header>
+    <h1 class="ui inverted black block header header-fixed">
+      Projects
+    </h1>
+  </header>
 
-        <div class="projects-header-container">
-            <h1 class="ui inverted black block header header-fixed">
-              Projects
-            </h1>
-        </div>
-
-  <div class="container">
-        <h1 class="projects-jumbo-container">
+  <main class="ui one column projects page grid">
+        <p>
             Check out our creations!
-        </h1>
+        </p>
 
-      <div class="ui items projects-container-row">
+      <div class="ui items column">
           {{#each projects}}
               {{> projectItem}}
           {{/each}}
       </div>
-  </div>
+  </main>
 
 </template>
