@@ -7,10 +7,21 @@
 @xlarge: 1200px;
 
 body {
-    margin-top: 50px; /* 50px is the height of the navbar - change this if the navbarn height changes */
+    margin: 0;
+    margin-top: 58px; /* 58px is the height of the navbar - change this if the navbarn height changes */
     /* background: url(/images/mmo-header-background2.jpg); */
     background-position: -200px;
     color: #333;
+}
+
+nav {
+    top: 0;
+    position: fixed;
+    width: 100%;
+
+    a {
+        text-decoration: none;
+    }
 }
 
 .signup.container {
