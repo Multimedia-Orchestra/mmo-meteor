@@ -7,7 +7,6 @@ standard-app-packages
 autopublish
 insecure
 preserve-inputs
-bootstrap-3
 router
 semantic-ui
 less
