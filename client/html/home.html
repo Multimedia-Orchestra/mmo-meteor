@@ -5,62 +5,50 @@
 
     {{> navbarTemplate}}
 
-    <div class="header-image" >
+    <header class="ui home header" >
 
       <!--<img src="/images/mmo-header-background1.jpg" alt="bg">-->
 
       <div class="headline">
-        <div class="container">
-          <h2 class="hometitle">Multimedia Orchestra @Berkeley</h2>
-          <h2 class="callout">Make - Play - Connect</h2>
-        
-        </div>
+        <h1>Multimedia Orchestra @Berkeley</h1>
+        <h2>Make - Play - Connect</h2>
       </div>
 
-    </div><!-- /header-image -->
+    </header><!-- /header-image -->
 
-    <div class="feature container">
+    <hr class="ui divider" />
+
+    <main class="ui one column home page grid">
 
       <!-- START THE FEATURETTES -->
 
-      <hr class="featurette-divider">
-
-      <div class="featurette" id="make">
-        <img class="featurette-image img-circle img-responsive pull-right" src="/images/laserharp.jpg">
+      <div class="featurette column" id="make">
+        <img class="featurette-image ui circular right floated image" src="/images/laserharp.jpg">
         <h2 class="featurette-heading">Make <span class="text-muted">new and exciting experiences</span></h2>
-        <p class="lead">The Multimedia Orchestra project is a redefinition of a centuries-old music-making paradigm. There are no first chairs. We make instruments, installations, and tools to augment traditional instruments. Our projects are open source and well-documented.</p>
+        <p>The Multimedia Orchestra project is a redefinition of a centuries-old music-making paradigm. There are no first chairs. We make instruments, installations, and tools to augment traditional instruments. Our projects are open source and well-documented.</p>
       </div>
 
       <hr class="featurette-divider">
 
-      <div class="featurette" id="services">
-        <img class="featurette-image img-circle img-responsive pull-left" src="/images/jarenpiano.JPG">
+      <div class="featurette column" id="services">
+        <img class="featurette-image ui circular left floated image" src="/images/jarenpiano.JPG">
         <h2 class="featurette-heading">Play <span class="text-muted">and present work to unique audiences</span></h2>
-        <p class="lead">We put on shows, installations, galleries, workshops, and social events. The Multimedia Orchestra Project is dedicated to presenting incredible work to incredible audiences.  </p>
+        <p>We put on shows, installations, galleries, workshops, and social events. The Multimedia Orchestra Project is dedicated to presenting incredible work to incredible audiences.  </p>
       </div>
 
       <hr class="featurette-divider">
 
-      <div class="featurette" id="contact">
-        <img class="featurette-image img-circle img-responsive pull-right" src="/images/room2.jpg">
+      <div class="featurette column" id="contact">
+        <img class="featurette-image ui circular right floated image" src="/images/room2.jpg">
         <h2 class="featurette-heading">Connect <span class="text-muted">with our community</span></h2>
-        <p class="lead">The Multimedia Orchestra connects our community to awesome events, powerful tools, and enthusiatic mentors. We focus on learning through building, and we want to help you realize your creative, technical ideas.</p>
+        <p>The Multimedia Orchestra connects our community to awesome events, powerful tools, and enthusiatic mentors. We focus on learning through building, and we want to help you realize your creative, technical ideas.</p>
       </div>
 
       <!-- /END THE FEATURETTES -->
+    </main>
 
-      <hr>
+    <hr class="ui divider" />
 
-      <!-- FOOTER -->
-      <footer>
-
-          {{> embeddedSignupTemplate}}
-
-        
-      </footer>
-      <!-- /END OF FOOTER -->
-
-    </div><!-- /container -->
-
+    {{> embeddedSignupTemplate}}
 
   </template>

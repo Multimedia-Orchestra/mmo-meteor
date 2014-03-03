@@ -8,7 +8,7 @@
 
 body {
     margin: 0;
-    margin-top: 58px; /* 58px is the height of the navbar - change this if the navbarn height changes */
+    margin-top: 63px; /* 63px is the height of the navbar - change this if the navbarn height changes */
     /* background: url(/images/mmo-header-background2.jpg); */
     background-position: -200px;
     color: #333;
@@ -18,6 +18,7 @@ nav {
     top: 0;
     position: fixed;
     width: 100%;
+    z-index: 1;
 
     a {
         text-decoration: none;
@@ -33,6 +34,10 @@ nav {
 
 .two.checkbox.fields {
     margin-bottom: 10px;
+}
+
+.text-muted {
+    color: #999;
 }
 
 .projects-container-row {
@@ -95,15 +100,6 @@ nav {
     }
 }
 
-.hometitle {
-        text-align: center;
-}
-
-.callout {
-        text-align: center;
-}
-
-
 
 footer {
         margin: 50px 0;
@@ -116,6 +112,25 @@ footer {
 .intro-text {
     margin: 0 auto;
     width: 400px;
+}
+
+.home.header {
+    h1, h2 {
+        text-align: center;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-weight: 500;
+        line-height: 1.1;
+    }
+}
+.home.page {
+    .featurette {
+        p {
+            font-size: 1.45em;
+            margin-bottom: 20px;
+            font-weight: 200;
+            line-height: 1.4;
+        }
+    }
 }
 
 .about.page {
@@ -177,41 +192,42 @@ footer {
 
 
 .headline {
-    padding: 120px 0;
+    padding: 40px 0;
 }
 .feature {
     background-color:rgba(255, 255, 255, 1);
 }
 
 
-.headline > .container > h1 { font-size: 85px; }
-.headline > .container > h2 { font-size: 65px; }
+.headline > h1 { font-size: 85px; }
+.headline > h2 { font-size: 65px; }
 
 .featurette-divider { margin: 40px 0; }
 .featurette { overflow: hidden; }
-.featurette-image.pull-left { margin-right: 40px; }
-.featurette-image.pull-right { margin-left: 40px; }
+.featurette-image.floated.left { margin-right: 40px; }
+.featurette-image.floated.right { margin-left: 40px; }
+.featurette-image { width: 40%; }
 .featurette-heading { font-size: 50px; }
 
 @media (max-width: @xlarge) {
 
-.headline > .container > h1 {font-size: 140px;}
-.headline > .container > h2 {font-size: 63px;}
+.headline > h1 {font-size: 140px;}
+.headline > h2 {font-size: 63px;}
 .featurette-divider {margin: 50px 0;}
-.featurette-image.pull-left {margin-right: 20px;}
-.featurette-image.pull-right {margin-left: 20px;}
+.featurette-image.floated.left {margin-right: 20px;}
+.featurette-image.floated.right {margin-left: 20px;}
 .featurette-heading {font-size: 35px;}
 
 }
 
 @media (max-width: @large) {
 
-.headline > .container > h1 {font-size: 105px;}
-.headline > .container > h2 {font-size: 50px;}
+.headline > h1 {font-size: 105px;}
+.headline > h2 {font-size: 50px;}
 .featurette-divider {margin: 40px 0;}
 .featurette-image {max-width: 50%; }
-.featurette-image.pull-left {margin-right: 10px;}
-.featurette-image.pull-right {margin-left: 10px;}
+.featurette-image.floated.left {margin-right: 10px;}
+.featurette-image.floated.right {margin-left: 10px;}
 .featurette-heading {font-size: 30px;}
 
 }
@@ -227,8 +243,8 @@ footer {
 
 @media (max-width: @small) {
 
-.headline > .container > h1 {font-size: 70px;}
-.headline > .container > h2 {font-size: 32px;}
+.headline > h1 {font-size: 70px;}
+.headline > h2 {font-size: 32px;}
 .featurette-divider {margin: 30px 0;}
 
 }
@@ -236,8 +252,8 @@ footer {
 @media (max-width: @tiny) {
 
 .headline {padding: 75px 0 25px 0;}
-.headline > .container > h1 {font-size: 60px;}
-.headline > .container > h2 {font-size: 30px;}
+.headline > h1 {font-size: 60px;}
+.headline > h2 {font-size: 30px;}
 
 }
 
@@ -245,7 +261,7 @@ footer {
 
 .featurette-divider {margin: 10px 0;}
 .featurette-image {max-width: 100%;}
-.featurette-image.pull-left {margin-right: 0; margin-bottom: 10px;}
-.featurette-image.pull-right {margin-left: 0; margin-bottom: 10px;}
+.featurette-image.floated.left {margin-right: 0; margin-bottom: 10px;}
+.featurette-image.floated.right {margin-left: 0; margin-bottom: 10px;}
 
 }
