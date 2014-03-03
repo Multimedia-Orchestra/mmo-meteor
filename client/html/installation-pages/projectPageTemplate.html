@@ -16,12 +16,12 @@
 {{> navbarTemplate }}
 
 <!-- context is project JSON -->
-<div class="container">
-    <div class="headline feature">
+<main class="ui project page grid">
+    <div class="column">
         <h1> {{name}} <span class="text-muted">by {{maker}}</span> </h1>
         <h2>{{description}}</h2>
 
-        <hr>
+        <hr class="ui divider" />
 
         {{{renderProjectInfo}}}
 
@@ -31,6 +31,6 @@
 
 
     </div>
-</div>
+</main>
 
 </template>
