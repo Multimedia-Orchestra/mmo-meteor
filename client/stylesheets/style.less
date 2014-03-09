@@ -1,0 +1,240 @@
+/* RESPONSIVE variables */
+@micro: 375px;
+@tiny: 640px;
+@small: 668px;
+@medium: 768px;
+@large: 991px;
+@xlarge: 1200px;
+
+body {
+    margin: 0;
+    margin-top: 63px; /* 63px is the height of the navbar - change this if the navbarn height changes */
+    /* background: url(/images/mmo-header-background2.jpg); */
+    background-position: -200px;
+    color: #333;
+}
+
+nav {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.home.header {
+    h1, h2 {
+        text-align: center;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-weight: 500;
+        line-height: 1.1;
+    }
+}
+.home.page {
+    .featurette {
+        p {
+            font-size: 1.45em;
+            margin-bottom: 20px;
+            font-weight: 200;
+            line-height: 1.4;
+        }
+    }
+}
+
+.about.page {
+    .column {
+        header {
+            margin: 0 auto;
+            width: 400px;
+        }
+
+        strong {
+            font-weight: 700;
+        }
+
+        h2, p {
+            text-align: center;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-weight: 500;
+            line-height: 1.1;
+        }
+
+        p {
+            margin: 0 auto;
+            font-size: 1.475em;
+            line-height: 1.4;
+            max-width: 700px;
+            padding: 30px;
+        }
+    }
+    .friends.column .images {
+        text-align: center;
+        padding-top: 30px;
+        margin: 0 auto;
+
+        img {
+            width: 300px;
+            vertical-align: middle;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        @media (max-width: @large) {
+            img { width: 250px; }
+        }
+        @media (max-width: @medium) {
+            img { width: 225px; }
+        }
+        @media (max-width: @small) {
+            img { width: 200px; }
+        }
+
+        #cnmat {
+            padding-top:40px;
+        }
+
+        #berkeley {
+            padding-top:10px;
+        }
+    }
+}
+
+.projects.page {
+    header {
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    > p {
+        text-align: center;
+        font-size: 50px;
+        font-weight:30px;
+    }
+
+    .items {
+        padding-top:10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 10px;
+
+        img {
+            height: 200px !important;
+            width: 100%;
+        }
+    }
+}
+
+.project.page {
+    h1, h2 {
+        text-align: center;
+    }
+}
+
+.connect.page {
+    /* background: url(/images/room.jpg); */
+    /* background-size: cover; */
+
+    .column {
+        text-align: center;
+        
+        p {
+            font-size: 1.4em;
+            line-height: 1.8em;
+        }
+    }
+}
+
+.signup.container {
+    text-align: center;
+}
+.signup.form {
+    display: inline-block;
+}
+
+.two.checkbox.fields {
+    margin-bottom: 10px;
+}
+
+.text-muted {
+    color: #999;
+}
+
+.block.header {
+    text-align: center;
+}
+
+.headline {
+    padding: 40px 0;
+}
+.feature {
+    background-color:rgba(255, 255, 255, 1);
+}
+
+.headline > h1 { font-size: 85px; }
+.headline > h2 { font-size: 65px; }
+
+.featurette-divider { margin: 40px 0; }
+.featurette { overflow: hidden; }
+.featurette-image.floated.left { margin-right: 40px; }
+.featurette-image.floated.right { margin-left: 40px; }
+.featurette-image { width: 40%; }
+.featurette-heading { font-size: 50px; }
+
+@media (max-width: @xlarge) {
+
+.headline > h1 {font-size: 140px;}
+.headline > h2 {font-size: 63px;}
+.featurette-divider {margin: 50px 0;}
+.featurette-image.floated.left {margin-right: 20px;}
+.featurette-image.floated.right {margin-left: 20px;}
+.featurette-heading {font-size: 35px;}
+
+}
+
+@media (max-width: @large) {
+
+.headline > h1 {font-size: 105px;}
+.headline > h2 {font-size: 50px;}
+.featurette-divider {margin: 40px 0;}
+.featurette-image {max-width: 50%; }
+.featurette-image.floated.left {margin-right: 10px;}
+.featurette-image.floated.right {margin-left: 10px;}
+.featurette-heading {font-size: 30px;}
+
+}
+
+@media (max-width: @medium) {
+        
+.container {margin: 0 15px;}
+.featurette-divider {margin: 40px 0;}
+.featurette-heading {font-size: 25px;}
+
+}
+
+
+@media (max-width: @small) {
+
+.headline > h1 {font-size: 70px;}
+.headline > h2 {font-size: 32px;}
+.featurette-divider {margin: 30px 0;}
+
+}
+
+@media (max-width: @tiny) {
+
+.headline {padding: 75px 0 25px 0;}
+.headline > h1 {font-size: 60px;}
+.headline > h2 {font-size: 30px;}
+
+}
+
+@media (max-width: @micro) {
+
+.featurette-divider {margin: 10px 0;}
+.featurette-image {max-width: 100%;}
+.featurette-image.floated.left {margin-right: 0; margin-bottom: 10px;}
+.featurette-image.floated.right {margin-left: 0; margin-bottom: 10px;}
+
+}
